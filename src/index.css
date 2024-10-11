@@ -1,0 +1,125 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box; /* para que no se salga del contenedor */
+}
+.container{
+  /* background-color:  #ee90c04c; */
+
+  /* background-color: #35353ac5; */
+  background-color: #35353a2f;
+  min-height: 100vh;
+  height: auto;
+
+}
+
+/* css para el navegador*/
+nav { 
+  display: flex; 
+  flex-direction: row;
+  font-family: "Poppins", sans-serif;
+  height: 80px;
+  width: 100%;
+}
+.margen{
+  padding: 20px 40px;
+}
+nav ul{
+  display: flex; 
+  flex-direction: row;
+  margin-left: auto;
+  justify-content: flex-end;
+  margin-right: 20px;
+
+}
+nav ul li{ 
+
+  line-height: 80px;
+  margin: 0 5px;
+  
+}
+nav ul li a{
+  
+  text-decoration: none;
+  color: white;
+  font-size: 15px ;
+  padding: 7px 13px;
+}
+
+li a.active, li a:hover{
+
+  border: 1px solid #de7fb0;
+  transition: .2s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  justify-content: flex-end;/* no sirve*/
+  line-height: 80px; /*centra la imagen */
+  margin-right: 10px; /*no funciona */
+  margin-left: auto ;
+  cursor: pointer; /* para que cambie la flechita*/
+  display: none;
+}
+#check{
+  display: none;
+}
+/* css primera pantalla */
+.container-primera {
+  /* background-color:  #f1b3d4ee; */
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 100%;
+  height: 88vh;
+  width: 100%;
+  
+}
+.container-text {
+  /* background-color:  #f1b3d4ee; */
+  grid-column: 1/2;
+  display: flex;
+
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+
+}
+.text-uno{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4vw;
+  padding: 4%;
+  height: 50%;
+  width: 60%;
+  /* background-color: #35353a3c; */
+  background-color:  #ee90c04c;
+  border-radius: 12px;
+  border: 1px solid black;
+  text-align: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  box-shadow: 10px 10px #de7fb074;
+
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.text-uno:hover{
+  width: 61%;
+  height: 51%;
+
+}
+
+/* css segunda pantalla */
+.container-segundo {
+  /* background-color:  #f1b3d4ee; */
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 100%;
+  height: 88vh;
+  width: 100%;
+  
+}
