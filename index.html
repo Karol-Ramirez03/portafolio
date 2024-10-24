@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + Lit</title>
     <link rel="stylesheet" href="./src/index.css" />
-    <script type="module" src="/src/my-element.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="module" src="./src/my-element.js" defer></script>
   </head>
   <body>
     <header>
@@ -17,16 +18,20 @@
               <i class='bx bx-menu'></i><!-- para que aparezca el icono -->
           </label>
           <ul>
-              <li><a href="#casa" >Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#menu">Menu</a></li>
-              <li><a href="#service">Service</a></li>
-              <li><a href="#contact">Contact</a></li>
-
+              <li><a href="#casa" >inicio</a></li>
+              <li><a href="#about">sobre mi</a></li>
+              <li><a href="#menu">mision</a></li>
+              <li><a href="#service">proyectos</a></li>
+              <li><a href="#contact">tecnologias</a></li>
           </ul>
       </nav>
   </header>
+
     <body class="container">
+      <div class="container-yo" id="inicio">
+        <h1>KAROL VANESSA RAMIREZ BECERRA</h1>
+        <h2>Backend Developer | Problem Solver | Tech Enthusiast</h2>
+      </div>
       <div class="container-primera">
         <div class="container-text">
           <p class="text-uno">Desarrolladora proactiva, organizada y comprometida, con una gran afinidad por la programación. Siempre dispuesta a asumir responsabilidades y entregar resultados de alta calidad. Disfruto enfrentar desafíos complejos y colaborar en proyectos innovadores, buscando continuamente adquirir nuevos conocimientos y experiencia, logrando fomentar nuevas soluciones tecnológicas.</p>
@@ -34,10 +39,141 @@
         <img src="" alt="">
       </div>
 
-      <div class="container-segundo">
-        <div class=""> </div>
+     <div class="container-segundo">
+        <div class="mvo">
+          <h2>Mision</h2>
+          <img src="" alt="">
+          <p>
+            Desarrollar soluciones tecnológicas que generen verdadero valor a los proyectos y equipos de empresas del sector comercial. A través del diseño de software eficiente y accesible, optimizar la gestión de bases de datos y los procesos internos, así mismo contribuir al crecimiento sostenible de sus negocios.
+            especializándome en ofrecer productos alineados con las demandas del mercado, adaptándose a los cambios y afrontando desafíos con creatividad. Mi compromiso con la excelencia y la responsabilidad asegura que cada solución está diseñada para apoyar a emprendedores, facilitando su éxito en un entorno competitivo.
+          </p>
+        </div>
+        <div class="mvo">
+          <h2>Vision</h2>
+          <img src="" alt="">
+          <p>
+            Ser en el 2027 una profesional especializada en la gestión de bases, utilizando mi conocimiento para impulsar el crecimiento de empresas mediante soluciones tecnológicas avanzadas. Liderando un equipo de desarrollo de software, creando productos que optimicen procesos y brinden a mis clientes una ventaja competitiva.
+            Enfocándome en empresas en crecimiento y proyectos de impacto, colaborar con compañías tecnológicas de referencia que pongan a prueba mis destrezas y habilidades. para lograrlo, seguiré formándome en áreas emergentes como inteligencia artificial, automatización y desarrollo móvil, estableciendo alianzas que me permitan ofrecer soluciones innovadoras y efectivas.            
+          </p>
+        </div>
+
+        <div class="mvo">
+          <h2>Objetivos</h2>
+          <img src="" alt="">
+          <p>
+            <ul>
+              <li>Crear aplicaciones personalizadas que mejoren la eficiencia y optimicen los procesos internos de las empresas comerciales, generando valor tangible a través de la innovación tecnológica.</li>
+              <li>Formarme continuamente en áreas como inteligencia artificial, automatización y desarrollo móvil, para ofrecer soluciones que mantengan a mis clientes competitivos en un entorno empresarial</li>
+              <li>Mantener un alto estándar de calidad en todos los productos y servicios, asegurando que las soluciones entregadas cumplan con las expectativas de mis clientes y se alineen con las demandas del mercado.</li>
+            </ul>
+          </p>
+        </div>
       </div>
-      
-    </body>
+
+
+      <div class="container-tercero">
+        <h1>Proyectos</h1>
+      <div class="carousel">
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <a href="https://karol-ramirez03.github.io/evaluacionhtml/" target="_blank"> 
+                    <img src="imagen1 (1).png" alt="Imagen 1"> 
+                    <div class="carousel-caption">Esta landing page fue creada usando HTML y CSS. HTML se encargó de la estructura del contenido, definiendo elementos como encabezados, secciones y botones, mientras que CSS fue utilizado para estilizar la página, controlando el diseño, colores, fuentes y disposición.</div>               
+                  </a>
+            </div>
+            <div class="carousel-slide">
+                <a href="https://karol-ramirez03.github.io/proyectohtml/" target="_blank">
+                    <img src="imagen1 (2).png" alt="Imagen 2">
+                    <div class="carousel-caption">Esta pagina para comidas rapidas fue creada con HTML y CSS, utilizando Flexbox y Grid para un diseño responsivo. HTML define la estructura del contenido, mientras que CSS estiliza la página, controlando disposición, colores y fuentes para una experiencia de usuario atractiva.
+
+                    </div>               
+
+                </a>
+            </div>
+            <div class="carousel-slide">
+                <a href="https://github.com/Karol-Ramirez03/cuestionarios" target="_blank">
+                    <img src="imagen1 (3).png" alt="Imagen 3">
+                    <div class="carousel-caption">Desarrollo de un sistema en Java que permite almacenar las respuestas de encuestas en una base de datos MySQL. Este proyecto incluye funcionalidades CRUD (Crear, Leer, Actualizar y Eliminar) para gestionar las respuestas de manera eficiente y facilitar el análisis de datos recopilados.</div>
+
+                </a>
+            </div>
+            <div class="carousel-slide">
+              <a href="https://github.com/Karol-Ramirez03/campusBike" target="_blank">
+                  <img src="imagen1 (4).png" alt="Imagen 4">
+                  <div class="carousel-caption">Ejercicios de SQL enfocados en la creación de consultas, procedimientos almacenados y triggers en MySQL. Estos ejercicios tienen como objetivo practicar la manipulación de datos y automatizar procesos en la base de datos.</div>
+
+              </a>
+          </div>
+        </div>
+    </div>
+    </div>
+      <div class="container-cuarto">
+        <h1>Tecnologias</h1>
+
+        <div class="galeria">
+          <div class="tarjeta">
+              <div class="cara frente">
+                  <img src="logojs.png" alt="Imagen 1">
+              </div>
+              <div class="cara atras">
+                  <p>JavaScript (JS) es un lenguaje de programación que permite agregar interactividad a las páginas web. Se ejecuta en el navegador y es esencial para crear funciones dinámicas como animaciones, validación de formularios, y la actualización del contenido sin recargar la página.</p>
+              </div>
+          </div>
+          <div class="tarjeta">
+              <div class="cara frente">
+                  <img src="csslogo.png" alt="Imagen 2">
+              </div>
+              <div class="cara atras">
+                  <p>CSS (Cascading Style Sheets) es utilizado para describir la presentación visual de una página web. Permite definir el diseño, colores, fuentes, y disposición de los elementos HTML, mejorando la apariencia y el estilo de una página web. </p>
+              </div>
+          </div>
+          <div class="tarjeta">
+              <div class="cara frente">
+                  <img src="htmllogo.png" alt="Imagen 3">
+              </div>
+              <div class="cara atras">
+                  <p>HTML (HyperText Markup Language) es el lenguaje estándar utilizado para crear y estructurar páginas web. Define el contenido y la estructura de un sitio web mediante etiquetas, permitiendo agregar texto, imágenes, enlaces y otros elementos multimedia.</p>
+              </div>
+          </div>
+
+
+          <div class="tarjeta">
+            <div class="cara frente">
+                <img src="pythonlogo.png" alt="Imagen 3">
+            </div>
+            <div class="cara atras">
+                <p>lenguaje de programación de alto nivel, conocido por su simplicidad y legibilidad. Es ideal para principiantes, pero también potente para desarrolladores avanzados. Python se usa en una variedad de campos, como desarrollo web, ciencia de datos, automatización, inteligencia artificial.
+                </p>
+            </div>
+        </div>
+        <div class="tarjeta">
+          <div class="cara frente">
+              <img src="javalogo.png" alt="Imagen 3">
+          </div>
+          <div class="cara atras">
+              <p>lenguaje de programación orientado a objetos, diseñado para ser portátil y versátil, permitiendo el desarrollo de aplicaciones en múltiples plataformas. Es ampliamente utilizado en el desarrollo de software empresarial, aplicaciones móviles (especialmente en Android) y sistemas embebidos.</p>
+          </div>
+        </div>
+        <div class="tarjeta">
+          <div class="cara frente">
+              <img src="litlogo.png" alt="Imagen 3">
+          </div>
+          <div class="cara atras">
+              <p>Lit es una biblioteca para construir componentes web, basada en estándares web, que permite crear interfaces de usuario reactivas y de alto rendimiento utilizando un enfoque basado en plantillas y una fácil gestión del estado.</p>
+          </div>
+        </div>
+        <div class="tarjeta">
+          <div class="cara frente">
+              <img src="springboot.png" alt="Imagen 3">
+          </div>
+          <div class="cara atras">
+              <p>marco de trabajo (framework) que facilita el desarrollo de aplicaciones Java, especialmente aplicaciones web, al proporcionar una configuración simplificada y una serie de características predefinidas que permiten crear aplicaciones listas para producción de manera rápida.</p>
+          </div>
+      </div>
+      </div>
+
+      </div>
+
+
   </body>
 </html>
