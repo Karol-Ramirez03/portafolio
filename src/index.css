@@ -124,7 +124,7 @@ li a.active, li a:hover{
 .container-primera {
   /* background-color:  #f1b3d4ee; */
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 55% 45%;
   grid-template-rows: 100%;
   height: 88vh;
   width: 100%;
@@ -140,6 +140,19 @@ li a.active, li a:hover{
   align-items: center;
   justify-content: center;
 
+
+}
+.container-primera-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-primera img{
+  /* background-color:  #f1b3d4ee; */
+  width:60%;
+  height: auto;
+  mask-image: linear-gradient( black 80%, transparent);
+  
 
 }
 .text-uno{
@@ -488,6 +501,7 @@ a{
   padding: 10px;
   text-align: center;
   border: 1px solid #ddd;
+  font-size: 1vw;
 }
 
 img {
@@ -496,13 +510,92 @@ img {
   border-radius: 10px;
 }
 
+
+/* contactame */
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  /* background: linear-gradient(135deg, #02021D, #CF83B1); */
+  color: white;
+  text-align: center;
+  padding: 20%;
+  border-radius: 15px;
+  /* box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); */
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-me::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s ease;
+  z-index: 0;
+}
+
+.contact-me:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.contact-me h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Espacio entre los iconos */
+  position: relative;
+  z-index: 1;
+}
+
+.contact-icons .icon-link {
+  transition: transform 0.2s, filter 0.2s, box-shadow 0.3s; /* Efecto de transición */
+}
+
+.contact-icons img {
+  width: 50px; /* Tamaño de los iconos */
+  height: 50px; /* Tamaño de los iconos */
+  transition: transform 0.2s, filter 0.2s; /* Efecto de transición */
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.6));
+}
+
+.contact-icons img:hover {
+  transform: scale(1.2); /* Efecto de zoom al pasar el ratón */
+  filter: brightness(1.2); /* Brillo adicional al pasar el ratón */
+}
+
+.icon-link:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra al pasar el ratón */
+}
+
+
+
+
+
 @media (max-width: 768px) {
   .container-primera {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr; 
+    height: auto;
   }
 
   .text-uno {
     font-size: 2.5vw; 
+    width: 80%;
   }
 
   .mvo {
@@ -534,7 +627,7 @@ img {
   flex-direction: column;
   height: auto;
   flex-wrap: wrap;
-  padding: 5%;
+  padding: 10%;
   width: 100%;
   
 }
@@ -566,6 +659,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: auto;
 }
 .galeria {
   display: grid;
@@ -584,10 +678,48 @@ img {
 }
 .container-tercero h1{
   color:  rgb(207, 131, 177);
-  font-size: 4vw;
+  font-size: 7vw;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    filter: brightness(2px 1px #ddd);
  }
+ .container-tercero {
+  height: 80vh;
+ }
+ .container-cuarto h1 {
+  font-size: 7vw;
+}
+.galeria{
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.atras{
+  font-size: 2vw;
+}
+.contact-me h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Espacio entre los iconos */
+  position: relative;
+  z-index: 1;
+}
+
+.contact-icons .icon-link {
+  transition: transform 0.2s, filter 0.2s, box-shadow 0.3s; /* Efecto de transición */
+}
+
+.contact-icons img {
+  width: 50px; /* Tamaño de los iconos */
+  height: 50px; /* Tamaño de los iconos */
+  transition: transform 0.2s, filter 0.2s; /* Efecto de transición */
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.6));
+}
+
 }
 
 @media (max-width: 480px) {
@@ -604,9 +736,14 @@ img {
   }
 
   .container-tercero h1 {
-    font-size: 3.5vw;
+    font-size: 9vw;
   }
-
+  .container-tercero {
+    height: 60vh;
+   }
+  .container-cuarto h1 {
+    font-size: 9vw;
+  }
   .text-uno {
     font-size: 3vw; 
   }
