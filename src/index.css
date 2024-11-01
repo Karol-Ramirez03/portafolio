@@ -149,11 +149,10 @@ li a.active, li a:hover{
 }
 .container-primera img{
   /* background-color:  #f1b3d4ee; */
-  width:60%;
+  width:50%;
   height: auto;
   mask-image: linear-gradient( black 80%, transparent);
-  
-
+  filter: drop-shadow(0.5px 0.5px 15px #fd76b95f);
 }
 .text-uno{
   display: flex;
@@ -467,12 +466,12 @@ a{
   height: 150px;
   position: relative;
   transform-style: preserve-3d;
-  transition: transform 0.2s ease-in-out; /* Animación más fluida */
+  transition: transform 0.2s ease-in-out;
 }
 
 .tarjeta:active {
-  transform: rotateY(180deg); /* Voltea la tarjeta cuando se hace hover */
-}
+  transform: rotateY(180deg);
+} 
 
 .cara {
   position: absolute;
